@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/chat/style.css">
+
+        <title>Chat</title>
+
+    </head>
+
+    <body>
+
+        <div class="user-list" id="usser-list">
+
+            <h1>Online<br>Users</h1>
+
+            <div class="list" id="list">
+                
+            </div>
+            
+
+        </div>
+        
+        <div class="chat-area">
+
+            <h1>User Name</h1>
+
+            <div class="msg-area" id="msg-area">
+
+
+            </div>
+
+            <div class="input-area">
+
+                <input type="text" placeholder="Enter message text..." class="input-field" id="input-field">
+                <button class="send-btn" id="send-btn" onclick="send(inputField.value)">Send</button>
+
+            </div>
+            
+
+        </div>
+
+    </body>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="static/chat/script.js"></script>
+
+</html>
